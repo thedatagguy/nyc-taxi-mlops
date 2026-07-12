@@ -1,0 +1,26 @@
+# Data & processing
+pyspark==3.5.*
+pyarrow>=15.0
+pandas>=2.1
+
+# Pipeline & versioning
+dvc[s3]>=3.48
+
+# Experiment tracking
+mlflow>=2.12
+
+# Validation & config
+pydantic>=2.7
+pydantic-settings>=2.2
+
+# Drift detection
+evidently>=0.4.19
+
+# Utilities
+requests>=2.31
+python-dotenv>=1.0
+
+# Dev/test
+pytest>=8.0
+pytest-cov>=4.1
+ruff>=0.4
