@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class DataSourceConfig(BaseSettings):
     """Configuration for the NYC TLC data source."""
 
-    model_config = SettingsConfigDict(env_prefix="TLC_", env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(env_prefix="TLC_", env_file=".env",extra="ignore")
 
     base_url: str = "https://d37ci6vzurychx.cloudfront.net/trip-data"
     dataset: str = "yellow_tripdata"

@@ -1,6 +1,6 @@
 # Data & models (DVC-tracked, not git-tracked)
-data/
-models/
+# data/
+# models/
 mlruns/
 mlartifacts/
 
@@ -13,6 +13,7 @@ venv/
 .pytest_cache/
 
 # Environment & secrets
+.env
 .venv
 *.pem
 
