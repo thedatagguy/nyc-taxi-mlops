@@ -24,6 +24,12 @@ class RawTripRecord(BaseModel):
     payment_type: int
     fare_amount: float
     total_amount: float
+    fare_amount: float
+    extra: Optional[float] = None
+    mta_tax: Optional[float] = None
+    tip_amount: Optional[float] = None
+    tolls_amount: Optional[float] = None
+    improvement_surcharge: Optional[float] = None
     congestion_surcharge: Optional[float] = None  # absent before 2019
     airport_fee: Optional[float] = None           # absent before 2022; case varies!
 
